@@ -1,22 +1,44 @@
 export const initialStore=()=>{
   return{
-    message: null,
-    todos: [
-      {
-        id: 1,
-        title: "Make the bed",
-        background: null,
-      },
-      {
-        id: 2,
-        title: "Do my homework",
-        background: null,
-      }
-    ]
+    // 3 variables for starwars api
+    people:[],
+    vehicles:[],
+    planets:[]
   }
 }
 
 export default function storeReducer(store, action = {}) {
+  
+  if(action.type=="set_people"){
+    console.log("action:", action)
+    return{
+      ...store,
+      people: action.payload
+    }
+  }
+  
+  if(action.type=="set_vehicles"){
+    return{
+      ...store,
+      vehicles: action.payload
+    }
+  }
+
+  if(action.type=="set_planets"){
+    return{
+      ...store,
+      planets: action.payload
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
   switch(action.type){
     case 'add_task':
 
