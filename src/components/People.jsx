@@ -10,7 +10,7 @@ export const People = () => {
   return (
 	<div>
 		<h1>People</h1>
-		{store.people.length > 0 ? store.people.map((person)=>(
+		{store.people.length > 0 ? store.people.map((person,i)=>(
 				<div className="" key={person.uid}>
 					
 					<div className="card m-3 border-3 border-dark" style={{ width: '18rem' }} >
@@ -23,7 +23,7 @@ export const People = () => {
 						<p className="card-text"><b>Skin Complexion:</b> {person.skin_color}</p>
 
 					<div className="ml-auto">
-						<Link to="OneCharacter/YO"> 
+						<Link to={"OneCharacter/"+ i}> 
 							<button className="btn btn-primary">See More</button>
 						</Link>
 					</div>

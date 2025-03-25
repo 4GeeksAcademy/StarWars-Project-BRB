@@ -29,6 +29,11 @@ export const CharacterOne = props => {
   );
 };
 
+// const myChracter = store.contactlist[word]  // Use this to connect character array 
+
+
+
+
 // // Use PropTypes to validate the props passed to this component, ensuring reliable behavior.
 // Single.propTypes = {
 //   // Although 'match' prop is defined here, it is not used in the component.
