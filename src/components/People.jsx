@@ -13,7 +13,7 @@ export const People = () => {
 		{store.people.length > 0 ? store.people.map((person,i)=>(
 				<div className="" key={person.uid}>
 					
-					<div className="card m-3 border-3 border-dark" style={{ width: '18rem' }} >
+					<div className="card m-3 border-3 border-dark flex" style={{ width: '18rem' }} >
 					<img className="card-img-top" src="https://picsum.photos/id/227/400/300" alt="Card image cap"/>
 					<div className="card-body">
 						<h5 className="card-title"></h5>

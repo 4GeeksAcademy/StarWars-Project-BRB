@@ -63,6 +63,9 @@ export const Home = () => {
 			<People/>
 			<Planets/>
 			<Vehicles/>
+			<Link to= />
+			<button> see more</button>
+			</Link>
 		</div>
 	);
 }

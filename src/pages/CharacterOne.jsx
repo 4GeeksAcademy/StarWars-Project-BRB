@@ -6,30 +6,25 @@ import useGlobalReducer from "../hooks/useGlobalReducer";  // Import a custom ho
 
 // Define and export the Single component which displays individual item details.
 export const CharacterOne = props => {
-  // Access the global state using the custom hook.
-  const { store } = useGlobalReducer()
 
-  // Retrieve the 'word' URL parameter using useParams hook.
+  const { store } = useGlobalReducer()
   const { word } = useParams()
   console.log("variable:",word)
+  const peopleArray = store.people
+  const person = peopleArray[word]
 
   return (
     <div className="container text-center">
-      {/* Display the title of the todo element dynamically retrieved from the store using theId. */}
-      {/* <h1 className="display-4">Todo: {singleTodo?.title}</h1>
-      <hr className="my-4" />  A horizontal rule for visual separation. */}
-
-      {/* A Link component acts as an anchor tag but is used for client-side routing to prevent page reloads. */}
       <Link to="/">
         <span className="btn btn-primary btn-lg" href="#" role="button">
-          <h1>LUKE SKYWALKER PAGE</h1>
+          <h1>{person?.name} Page</h1>
         </span>
       </Link>
+          <p> {person?.name} profile </p>
     </div>
   );
 };
 
-// const myChracter = store.contactlist[word]  // Use this to connect character array 
 
 
 
