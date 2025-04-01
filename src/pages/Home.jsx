@@ -63,9 +63,9 @@ export const Home = () => {
 			<People/>
 			<Planets/>
 			<Vehicles/>
-			<Link to= />
+			{/* <Link to= Single/>
 			<button> see more</button>
-			</Link>
+			</Link> */}
 		</div>
 	);
 }

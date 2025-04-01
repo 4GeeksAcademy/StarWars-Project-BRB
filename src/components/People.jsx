@@ -8,12 +8,16 @@ export const People = () => {
   const{store,dispatch} = useGlobalReducer()
 
   return (
+		
 	<div>
 		<h1>People</h1>
-		{store.people.length > 0 ? store.people.map((person,i)=>(
-				<div className="" key={person.uid}>
+				<div className="d-flex d-row overflow-auto flex-nowrap" >
+
+					{store.people.length > 0 ? store.people.map((person,i)=>(
+
+
 					
-					<div className="card m-3 border-3 border-dark flex" style={{ width: '18rem' }} >
+					<div className="card m-3" key={person.uid} style={{ width: '18rem', flex: "0 0 auto" }} >
 					<img className="card-img-top" src="https://picsum.photos/id/227/400/300" alt="Card image cap"/>
 					<div className="card-body">
 						<h5 className="card-title"></h5>
@@ -29,14 +33,13 @@ export const People = () => {
 					</div>
 					</div>
 					</div>
-				</div>
-
 		)) :
 		"no names found"}
+		</div>
 
 	</div>
 
-  )
+)
 }
 
 {/* <Link to={"/single/YO"}>Link practice </Link> */}
