@@ -55,6 +55,7 @@ export const Home = () => {
 	getPeople();
 	getVehicles();
 	getPlanets();
+	// getFavorites()
   },[])
 
 

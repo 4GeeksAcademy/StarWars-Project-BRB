@@ -30,6 +30,12 @@ export const People = () => {
 						<Link to={"OneCharacter/"+ i}> 
 							<button className="btn btn-primary">See More</button>
 						</Link>
+						<button
+						onClick={()=>{
+							dispatch({type:"my_type", payload:person.name})
+						}}> 
+						favorite
+						</button>
 					</div>
 					</div>
 					</div>

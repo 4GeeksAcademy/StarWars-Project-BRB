@@ -3,7 +3,8 @@ export const initialStore=()=>{
     // 3 variables for starwars api
     people:[],
     vehicles:[],
-    planets:[]
+    planets:[],
+    favorite:[]
   }
 }
 
@@ -31,6 +32,14 @@ export default function storeReducer(store, action = {}) {
     }
   }
   
+  if(action.type =="my_type"){
+
+
+    return{
+      ...store,
+      favorite: [...store.favorite, action.payload]
+    }
+  }
   
   
   
