@@ -17,10 +17,11 @@ export const CharacterOne = props => {
     <div className="container text-center">
       <Link to="/">
         <span className="btn btn-primary btn-lg" href="#" role="button">
-          <h1>{person?.name} Page</h1>
+          <h1>{person?.name} Page </h1>
         </span>
       </Link>
-          <p> {person?.name} profile </p>
+          <h1> {person?.name}'s profile </h1>
+          <h5> {person?.name} is a {person?.skin_color} complexion with {person.hair_color} hair and {person.eye_color} eyes.</h5>
     </div>
   );
 };

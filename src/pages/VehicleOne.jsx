@@ -20,7 +20,8 @@ export const VehicleOne = props => {
           <h1>{vehicle?.name} Page</h1>
         </span>
       </Link>
-          <p> {vehicle?.name} profile </p>
+          <h3> {vehicle?.name} profile </h3>
+          <h5>The vehicle name is {vehicle?.name}, the model is {vehicle?.model} and it can hold {vehicle.passengers} passengers.</h5>
     </div>
   );
 };

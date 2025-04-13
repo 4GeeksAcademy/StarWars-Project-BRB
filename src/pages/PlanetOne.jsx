@@ -20,7 +20,8 @@ export const PlanetOne = props => {
           <h1>{planet?.name} Page</h1>
         </span>
       </Link>
-          <p> {planet?.name} profile </p>
+          <h3> {planet?.name} profile </h3>
+          <h5> {planet?.name}'s population is {planet?.population} and has a climate that is {planet.climate}.</h5>
     </div>
   );
 };
