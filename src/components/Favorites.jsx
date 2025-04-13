@@ -9,7 +9,10 @@ export const Favorites = () => {
   return (
     <div className="dropdown">
     <button className="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Favorites
+      Favorites 
+      <span className= "bg-light text-secondary rounded m-1 p-1">
+      {store.favorite.length}
+      </span>
     </button>
     <ul className="dropdown-menu">
       {store.favorite.map((item)=>{

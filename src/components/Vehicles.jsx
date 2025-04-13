@@ -17,17 +17,21 @@ const{store,dispatch} = useGlobalReducer()
                     <img className="card-img-top" src="https://picsum.photos/id/274/400/300" alt="Card image cap"/>
                     <div className="card-body">
                         <h5 className="card-title"></h5>
-                        <p className="card-text">{vehicle.name}</p>   
+                        <p className="card-text"><b>Name:</b>{vehicle.name}</p>
+                        <p className="card-text"><b>Model:</b>{vehicle.model}</p>
+                        <p className="card-text"><b>Passengers:</b>{vehicle.passengers}</p>
+            
                             <div className="ml-auto">
                                     <Link to={"VehicleOne/"+ i}> 
                                       <button className="btn btn-primary">See More</button>
                                     </Link>
-                                    <button
+
+                                    <i className= "fa-regular fa-heart p-3"
+
                                     onClick={()=>{
-                                      dispatch({type:"my_type", payload:vehicle.name})
-                                    }}> 
-                                    favorite
-                                    </button>
+                                    dispatch({type:"my_type", payload:vehicle.name})
+                                  }}>
+                                  </i>
                           </div>
                     </div>
                       
